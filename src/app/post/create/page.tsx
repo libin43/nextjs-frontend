@@ -22,7 +22,7 @@ export default function CreatePost() {
         control,
     } = useForm()
 
-    const [createPostMutation, { loading, error, data }] = useMutation(CREATE_POST_MUTATION);
+    const [createPostMutation, { loading, error, data }] = useMutation(CREATE_POST_MUTATION)
 
 
     const onSubmit = async (dataOnSubmit: any) => {

@@ -7,7 +7,7 @@ import {useForm} from "react-hook-form"
 import { Input } from "@/components/Input/Input";
 import { Button } from '@/components/Button/button';
 import { useMutation } from '@apollo/client';
-import { LOGIN_MUTATION } from '@/lib/graphql/queries/login';
+import { LOGIN_MUTATION } from '@/lib/graphql/mutations/login';
 import { useRouter } from 'next/navigation';
 
 export default function Login() {
@@ -40,7 +40,7 @@ export default function Login() {
                         mobile: dataOnSubmit.mobile,
                         password: dataOnSubmit.password
                     }
-                }
+                },
             })
 
             console.log(response, 'respon')
